@@ -62,7 +62,6 @@ export default class App extends Component {
             const newArr = [
                 ...todoData, newItem
             ]
-
             return {
                 todoData: newArr
             }
@@ -123,12 +122,15 @@ export default class App extends Component {
 
         return (
             <div className='todo-app'>
+                
                 <AppHeader toDo={todoCount} done={doneCount}/>
+                <div>
                 <SearchPanel onSearchChange={this.onSearchChange}/>
                 <ItemStatusFilter
                           filter={filter}
                           onFilterChange={this.onFilterChange}
                 />
+                </div>
                 <TodoList todos={visibleItems}
                           onDeleted={this.deleteItem}
                           onToggleImportant={this.onToggleImportant}

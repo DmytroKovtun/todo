@@ -21,12 +21,13 @@ class TodoListItem extends Component {
    }
 
   return (
-     <span className = {classNames}> 
-             <span className='todo-list-item-label' 
+     <div className = {classNames}> 
+             <div className='todo-list-item-label' 
               onClick = {onToggleDone}
              >   
              {label}
-             </span>
+             </div>
+             <div className = 'button'>
              <button type = 'button' className = 'btn btn-outline-success '
               onClick = {onToggleImportant}
              >
@@ -39,8 +40,9 @@ class TodoListItem extends Component {
              >
                <i className= 'fa fa-trash-o' />
              </button>
+             </div>
              
-      </span>
+      </div>
   )
   }
 }

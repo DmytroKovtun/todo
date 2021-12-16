@@ -1,3 +1,12 @@
+.todo-list-item {
+  display: flex;
+  justify-content:space-between;
+}
+
+.button {
+  margin-right: -5px;
+}
+
 .todo-list-item-label .todo-list-item {
   font-size: 1.25 rem;
 }
@@ -5,6 +14,7 @@
 .todo-list-item button {
   width:  35px;
   margin: 3px;
+  
 }
 
 .todo-list-item-label {
